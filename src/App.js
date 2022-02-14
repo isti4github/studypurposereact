@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+
 import './App.css';
+import ClassComponent from './ClassComponent';
+import DemoProps from './DemoProps';
+
+import FunctionalComponent from './FunctionalComponent';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <h1 style={{color:"green"}}>Function and Class Component | Idea about state and Hooks</h1>
+      <FunctionalComponent/>
+      <hr/>
+      <ClassComponent/>
+
+      <h1 style={{color:"green"}}> Props Example</h1>
+      <DemoProps user = "Hey I am props value!"/>
     </div>
   );
 }
